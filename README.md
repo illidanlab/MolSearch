@@ -30,7 +30,7 @@ This step is to setup the design move transformation API, from the author github
 MolSearch Stage 1
 
 ```
-python frag_mcts_mo.py --goal gsk3b_jnk3 --start_mols task1 --max_child 5 --num_sims 20 --mol_idx 0 --seed 0 --scalar 0.7
+python frag_mcts_mo_stage1.py --goal gsk3b_jnk3 --start_mols task1 --max_child 5 --num_sims 20 --mol_idx 0 --seed 0 --scalar 0.7
 ```
 
 MolSearch Stage 2
