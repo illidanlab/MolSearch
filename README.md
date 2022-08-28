@@ -23,6 +23,7 @@ git clone https://github.com/mahendra-awale/medchem_moves
 cd medchem_moves
 python setup.py install
 ```
+This step is to setup the design move transformation API, from the author github [page](https://github.com/mahendra-awale/medchem_moves).
 
 ## Running Commnands
 
