@@ -14,17 +14,30 @@ conda install -c conda-forge rdkit
 pip install pandas seaborn pickle-mixin
 pip install -U scikit-learn==0.21.3 (RF scorer of GSK3B and JNK3 requires this version of sklearn)
 ```
-# Design Move Transformations
+## Design Move Transformations
 Download the tranformation rules from [here](https://figshare.com/articles/dataset/chemblDB3_sqlitdb/12912080), whose link is provided by the design move github [page](https://github.com/mahendra-awale/medchem_moves). The transformation rules are derived from ChEMBL database at radius 3. Once the download is successful, put the downloaded file chemblDB3.sqlitdb (1.5GB) under MCTS folder. 
 
-# Outside of MCTS folder
+## Outside of MCTS folder
+```
 git clone https://github.com/mahendra-awale/medchem_moves
 cd medchem_moves
 python setup.py install
+```
 
 ## Running Commnands
-# stage 1
-python frag_mcts_mo.py --goal gsk3b_jnk3 --start_mols task1 --max_child 5 --num_sims 20 --mol_idx 0 --seed 0 --scalar 0.7
 
-# stage2
+stage 1
+
+```
+python frag_mcts_mo.py --goal gsk3b_jnk3 --start_mols task1 --max_child 5 --num_sims 20 --mol_idx 0 --seed 0 --scalar 0.7
+```
+
+stage2
+
+```
 python frag_mcts_mo_stage2.py --goal gsk3b_jnk3 --constraint gsk3b_jnk3 --start_mols task1 --max_child 3 --num_sims 10 --scalar 0.7 --group_idx 0 --seed 0 
+```
+
+# Acknowledgement
+
+This research is funded in part by NSF IIS-1749940 (JZ), ONR N00014-20-1-2382 (JZ), NIH R01GM134307 (JZ, BC). This work is also supported via computational resources and services provided by the Institute for Cyber-Enabled Research ([ICER](https://icer.msu.edu/)) at MSU.
