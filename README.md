@@ -43,4 +43,4 @@ python frag_mcts_mo_stage2.py --goal gsk3b_jnk3 --constraint gsk3b_jnk3 --start_
 
 This research is funded in part by NSF IIS-1749940 (JZ), ONR N00014-20-1-2382 (JZ), NIH R01GM134307 (JZ, BC). This work is also supported via computational resources and services provided by the Institute for Cyber-Enabled Research ([ICER](https://icer.msu.edu/)) at MSU.
 
-The backend code for MCTS is is inherited from [A graph-based genetic algorithm and generative model/Monte Carlo tree search for the exploration of chemical space] (https://pubs.rsc.org/en/content/articlelanding/2019/sc/c8sc05372c). 
+The backend code for MCTS is is inherited from [A graph-based genetic algorithm and generative model/Monte Carlo tree search for the exploration of chemical space](https://pubs.rsc.org/en/content/articlelanding/2019/sc/c8sc05372c). 
